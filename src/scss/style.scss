@@ -1,0 +1,51 @@
+@import './variables';
+@import './layout/inputs';
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: rgb(243, 243, 243);
+}
+
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.form-wrapper {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	@media screen and (min-width: 400px) {
+		width: 350px;
+	}
+	&__header {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	label {
+		margin-bottom: 10px;
+	}
+	&--edit {
+		display: inline-block;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	&__buttons {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&--empty {
+		font-size: 20px;
+		text-align: center;
+		margin: 20px 0;
+		a {
+			color: rgb(0, 150, 136);
+		}
+	}
+}
